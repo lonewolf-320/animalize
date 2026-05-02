@@ -70,7 +70,7 @@ const Booking = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-secondary dark:text-white">Custom Packages</h4>
-                                    <p className="text-sm text-gray-400"> tailored experiences for any age group.</p>
+                                    <p className="text-sm text-gray-400">Tailored experiences for any age group.</p>
                                 </div>
                             </div>
                         </div>

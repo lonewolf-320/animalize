@@ -7,20 +7,20 @@ const eventsData = [
     {
         title: "Exotic Animal Shows",
         desc: "Experience the thrill of interacting with snakes, iguanas, and other exotic reptiles under expert supervision. Perfect for educational events and parties.",
-        image: "https://images.unsplash.com/photo-1543329124-b152778da141?q=80&w=1200&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1617540021016-72023b487e99?q=80&w=1200&auto=format&fit=crop",
         features: ["Hands-on interaction", "Educational talk", "Photo opportunities"]
     },
     {
         title: "Big Cat Experiences",
         desc: "Witness the majesty of nature's most powerful felines. Our safely managed big cat encounters allow you to get closer to these magnificent creatures.",
-        image: "https://images.unsplash.com/photo-1579782550186-b484ea890918?q=80&w=1200&auto=format&fit=crop", // Changed to a more reliable Tiger image
+        image: "https://images.unsplash.com/photo-1615963244664-5b845b2025ee?q=80&w=1200&auto=format&fit=crop",
         features: ["Safety briefing", "Trained handlers", "Unforgettable memories"]
     },
     {
         title: "Bird of Prey Shows",
         desc: "Watch eagles, hawks, and owls soar. Our falconry displays showcase the agility and power of these incredible hunters.",
-        image: "https://images.unsplash.com/photo-1628173491959-17ce21c27702?q=80&w=1200&auto=format&fit=crop", // Changed to a specific Bird of Prey image
-        features: ["Flight domonstrations", "Species facts", "Close-up viewing"]
+        image: "https://images.unsplash.com/photo-1557401622-cfc0aa5d146c?q=80&w=1200&auto=format&fit=crop",
+        features: ["Flight demonstrations", "Species facts", "Close-up viewing"]
     }
 ];
 
