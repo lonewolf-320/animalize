@@ -1,19 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animalize | Premium Pet Adoption & Events</title>
-  <meta name="description"
-    content="Find your new family member or book an unforgettable exotic animal experience. Animalize connects you with ethically bred pets and unique events." />
-  <script type="module" crossorigin src="/assets/index-XXPS2Tdy.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-aX335aXR.css">
+  <title>Animalize — Animalize Your Living</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#1a1a1a',
+              surface: '#2d2d2d',
+              border: '#3a3a3a',
+              hover: '#353535',
+              muted: '#4a4a4a',
+            },
+            accent: {
+              DEFAULT: 'var(--accent, #7c1e1e)',
+              hover: 'color-mix(in oklch, var(--accent, #7c1e1e) 80%, white)',
+              dark: 'color-mix(in oklch, var(--accent, #7c1e1e) 80%, black)',
+              light: 'color-mix(in oklch, var(--accent, #7c1e1e) 70%, white)',
+            }
+          },
+          fontFamily: {
+            sans: ['"DM Sans"', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <!-- React + Babel -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --accent: #7c1e1e;
+      --card-radius: 12px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #1a1a1a;
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #1a1a1a; }
+    ::-webkit-scrollbar-thumb { background: #3a3a3a; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #4a4a4a; }
+    select option { background: #2d2d2d; color: #fff; }
+  </style>
 </head>
-
 <body>
-  <div id="root"></div>
-</body>
+  <div id="root"></div>
 
+  <script type="text/babel" src="pet-data.jsx"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="components.jsx"></script>
+  <script type="text/babel" src="home-page.jsx"></script>
+  <script type="text/babel" src="events-page.jsx"></script>
+  <script type="text/babel" src="info-pages.jsx"></script>
+  <script type="text/babel" src="app.jsx"></script>
+</body>
 </html>
